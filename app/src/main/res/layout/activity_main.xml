@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_register" />
+
+
+        <ImageView
+            android:id="@+id/backgroundWhite"
+            android:layout_width="465dp"
+            android:layout_height="425dp"
+            android:layout_marginTop="500dp"
+            android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="520dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bntGoogle"
+        android:layout_width="385dp"
+        android:layout_height="40dp"
+        android:text="ENTRAR PELO GOOGLE"
+        android:background="@drawable/ic_btn_google"
+        android:drawableLeft="@drawable/icon_google_32"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="08dp"
+        android:layout_margin="15dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFacebook"
+        android:layout_width="385dp"
+        android:layout_height="40dp"
+        android:text="ENTRAR PELO FACEBOOK"
+        android:background="@drawable/ic_btn_facebook"
+        android:drawableLeft="@drawable/icon_facebook_32"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="08dp"
+        android:layout_margin="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEmail"
+        android:layout_width="385dp"
+        android:layout_height="40dp"
+        android:text="ENTRAR com e-mail"
+        android:background="@drawable/ic_btn_email"
+        android:drawableLeft="@drawable/icon_email_32"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="08dp"
+        android:layout_margin="15dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textFoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="750dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:text="Ao entrar, você concorda com nossos Termos de uso, Politica de Cookies e Politica de Privacidade." />
+
+
+</RelativeLayout>
